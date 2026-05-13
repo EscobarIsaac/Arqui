@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80C0C8"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- Logo de Monsters Inc -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/monster"
+            android:contentDescription="Logo de Monsters Inc"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center" />
+
+        <!-- Título de la página -->
+        <TextView
+            android:text="Conversión de Unidades"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#234d73"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Campo de Valor a Convertir -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor a convertir"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="#34A3EB"
+            app:hintTextColor="@color/blue_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etValor"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Opciones de Conversión -->
+        <RadioGroup
+            android:id="@+id/rgTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:dividerPadding="8dp">
+
+            <RadioButton
+                android:id="@+id/rbPulgadasACm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulgadas a cm"
+                android:textColor="#234d73"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbCmAPulgadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Cm a pulgadas"
+                android:textColor="#234d73" />
+        </RadioGroup>
+
+        <!-- Botón Convertir -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConvertir"
+            android:text="Convertir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#34A3EB"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="8dp"/>
+
+        <!-- Botón Cerrar Sesión -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCerrarSesion"
+            android:text="Cerrar sesión"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#8C52FF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="8dp"/>
+
+        <!-- Imagen en la parte inferior -->
+        <ImageView
+            android:id="@+id/bottomImage"
+            android:layout_width="wrap_content"
+            android:layout_height="238dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:contentDescription="Sullivan"
+            android:src="@drawable/sully" />
+
+    </LinearLayout>
+</ScrollView>

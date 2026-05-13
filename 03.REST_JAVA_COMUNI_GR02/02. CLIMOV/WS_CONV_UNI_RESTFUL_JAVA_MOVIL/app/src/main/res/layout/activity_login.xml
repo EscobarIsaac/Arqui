@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/monster_blue">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sullivan"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/usuarioField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/contrasenaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:text="Ingresar"
+        android:onClick="onLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:backgroundTint="@color/monster_green"
+        android:textColor="@android:color/white" />
+</LinearLayout>
