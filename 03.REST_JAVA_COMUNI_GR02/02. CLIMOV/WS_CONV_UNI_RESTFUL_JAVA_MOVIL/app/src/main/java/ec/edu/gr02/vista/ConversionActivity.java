@@ -30,8 +30,8 @@ public class ConversionActivity extends AppCompatActivity {
         // Crear resultado dinámico (porque no tienes TextView en XML)
         txtResultado = new TextView(this);
         txtResultado.setTextSize(18);
-        ((LinearLayout)((ScrollView)findViewById(android.R.id.content)).getChildAt(0))
-                .addView(txtResultado);
+        LinearLayout mainLayout = findViewById(R.id.mainLinearLayout);
+        mainLayout.addView(txtResultado);
 
         btnConvertir.setOnClickListener(v -> {
 

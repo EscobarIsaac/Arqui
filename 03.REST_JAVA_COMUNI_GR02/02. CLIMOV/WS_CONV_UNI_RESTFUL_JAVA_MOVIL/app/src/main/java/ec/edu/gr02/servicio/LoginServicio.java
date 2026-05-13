@@ -5,8 +5,8 @@ import ec.edu.gr02.modelo.CredencialesUsuario;
 public class LoginServicio {
 
     // Usuario y contraseña permitidos
-    private static final String USUARIO_PERMITIDO = "Monster";
-    private static final String CONTRASEÑA_PERMITIDA = "admin";
+    private static final String USUARIO_PERMITIDO = "monster";
+    private static final String CONTRASEÑA_PERMITIDA = "monster9";
 
     public boolean autenticar(CredencialesUsuario credenciales) {
         // Validar que los datos no sean nulos

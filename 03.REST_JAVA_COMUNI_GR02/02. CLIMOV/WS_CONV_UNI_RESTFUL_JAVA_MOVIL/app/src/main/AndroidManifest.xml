@@ -11,7 +11,7 @@
         android:label="ConversionApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:theme="@style/Theme.WS_CONV_UNI_RESTFUL_JAVA_MOVIL"
         android:usesCleartextTraffic="true"> <activity
         android:name=".vista.LoginActivity"
         android:exported="true">
